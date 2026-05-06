@@ -1,0 +1,23 @@
+# Data files (don't commit large datasets)
+data/
+*.csv
+*.xlsx
+
+# Python cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Virtual environment
+venv/
+.venv/
+env/
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
