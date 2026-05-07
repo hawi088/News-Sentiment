@@ -1,6 +1,7 @@
-name: CI
+#this is a file that automates testing each time a code changes
+name: CI #continuous integration
 
-on:
+on: #this defines when the workflow will run. In this case, it runs on every push and pull request to the main branch.
   push:
     branches: [ main ]
   pull_request:
@@ -11,10 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v4
-    
-    - name: Set up Python
-      uses: actions/setup-python@v5
+    - uses: actions/checkout@v4 #this checks out the code from the repository so that it can be used in the workflow.
+     
+    - name: Set up Python #just a label for Github ui logs
+      uses: actions/setup-python@v5 #uses Python instaler action to set up the Python environment
       with:
         python-version: '3.9'
     
